@@ -18,7 +18,7 @@ Der eingegebene Suchtext wird anhand von Bindestrichen und Leerzeichen in einzel
 **Beispiel**\
 Suche nach Peter-Hans Fischer:\
 Suchbegriff mit Match: Pet, P Hans, Fischer, Peter-Hans-Fischer, hAnS, ...\
-Suchbegriff ohne Match: eter, peterhans, max
+Suchbegriff ohne Match: eter, peterhans, max, Peter-Hans Fischer Müller
 
 Weiteres: Der Algorithmus iteriert einfach durch den kompletten Datensatz durch. Dies ist notwendig, da die Daten unsortiert vorliegen. Weiterhin findet keine Priorisierung / Ranking der Matches statt.
 

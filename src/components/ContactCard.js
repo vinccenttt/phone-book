@@ -7,6 +7,7 @@ export default function ContactCard({ name, phone }) {
     const foregroundColor = isHovered ? "dark-blue" : "dark-gray";
   
     return (
+      <a href={`tel:${phone}`}>
       <div
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -19,7 +20,7 @@ export default function ContactCard({ name, phone }) {
           <p className={`text-sm text-${foregroundColor}`}>Tel. {phone}</p>
         </div>
         <PhoneIcon isHovered={isHovered} color={foregroundColor} />
-      </div>
+      </div></a>
     );
   }
   
