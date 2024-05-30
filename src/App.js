@@ -3,6 +3,7 @@ import "./index.css";
 import phoneBookData from "./phonebook.json";
 import { PhoneArrowUpRightIcon as PhoneIconOutline } from "@heroicons/react/24/outline";
 import { PhoneArrowUpRightIcon as PhoneIconSolid } from "@heroicons/react/24/solid";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
 function App() {
   const [searchString, setSearchString] = useState("");
@@ -33,13 +34,15 @@ function Header() {
 }
 
 function Searchbar({handleOnChange}) {
-  return (
+  return (<div className="flex items-center shadow rounded-md bg-white md:shadow-md py-2 px-3 gap-2">
+  <MagnifyingGlassIcon className="h-5 w-5 text-[#a0aec0]" /> 
     <input
-      className="md:shadow-md shadow rounded-md py-2 px-3 text-dark-gray focus:outline-none"
+      className="grow text-dark-gray focus:outline-none"
       type="text"
       onChange={handleOnChange}
       placeholder="In Kontakten suchen"
     />
+    </div>
   );
 }
 
