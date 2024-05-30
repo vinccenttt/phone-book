@@ -2,10 +2,14 @@
 module.exports = {
   content: [ "./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       colors: {
-        'gray' : '#2f302f',
-        'blue' : '#3258c9',
+        'dark-blue' : '#00254E',
+        'off-white': '#f9f9f9',
+        'dark-gray' : '#292926'
       },
     },
   },
