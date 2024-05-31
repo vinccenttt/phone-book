@@ -3,11 +3,11 @@ import { PhoneArrowUpRightIcon as PhoneIconOutline } from "@heroicons/react/24/o
 import { PhoneArrowUpRightIcon as PhoneIconSolid } from "@heroicons/react/24/solid";
 
 export default function ContactCard({ name, phone }) {
-    const [isHovered, setIsHovered] = useState(false);
-    const foregroundColor = isHovered ? "dark-blue" : "dark-gray";
-  
-    return (
-      <a href={`tel:${phone}`}>
+  const [isHovered, setIsHovered] = useState(false);
+  const foregroundColor = isHovered ? "dark-blue" : "dark-gray";
+
+  return (
+    <a href={`tel:${phone}`}>
       <div
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -20,16 +20,17 @@ export default function ContactCard({ name, phone }) {
           <p className={`text-sm text-${foregroundColor}`}>Tel. {phone}</p>
         </div>
         <PhoneIcon isHovered={isHovered} color={foregroundColor} />
-      </div></a>
-    );
-  }
-  
-  function PhoneIcon({ isHovered, color }) {
-    const translation = isHovered ? "transform -translate-y-1 translate-x-1" : "";
-    const styling = `h-6 w-6 text-${color} ${translation}`;
-    return isHovered ? (
-      <PhoneIconSolid className={styling} />
-    ) : (
-      <PhoneIconOutline className={styling} />
-    );
-  }
+      </div>
+    </a>
+  );
+}
+
+function PhoneIcon({ isHovered, color }) {
+  const translation = isHovered ? "transform -translate-y-1 translate-x-1" : "";
+  const styling = `h-6 w-6 text-${color} ${translation}`;
+  return isHovered ? (
+    <PhoneIconSolid className={styling} />
+  ) : (
+    <PhoneIconOutline className={styling} />
+  );
+}

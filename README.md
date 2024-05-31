@@ -26,7 +26,7 @@ Weiteres: Der Algorithmus iteriert einfach durch den kompletten Datensatz durch.
 Für das Styling habe ich Tailwind CSS benutzt, da mir das am vertrautesten ist - hoffe das passt.
 
 ### Mögliche Erweiterungen
-* Button zum löschen des Suchbegriffs innerhalb der Suchleiste
+* Button zum Löschen des Suchbegriffs innerhalb der Suchleiste
 * Suchergebnis alphabetisch sortieren
 * Eingabe auf unzulässige Zeichen, z.B. Zahlen überprüfen
 * Wäre der Datensatz lexikographisch sortiert, könnte man eventuell die Suche effizienter gestalten

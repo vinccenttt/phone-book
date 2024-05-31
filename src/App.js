@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="bg-off-white">
-      <Header/>
+      <Header />
       <div className="lg:container xl:px-40 lg:px-16 sm:px-12 px-8 pt-8 flex flex-col gap-6">
         <Searchbar handleOnChange={(e) => setSearchString(e.target.value)} />
         <SearchResult searchString={searchString} data={phoneBookData} />
@@ -18,11 +18,5 @@ function App() {
     </div>
   );
 }
-
-
-
-
-
-
 
 export default App;
