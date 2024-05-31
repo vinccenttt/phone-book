@@ -12,7 +12,7 @@ Die Demo wird online über GitHub Pages gehostet - einfach [hier](https://vincce
 
 ## Details
 
-# Wie funktioniert die Suche? 
+### Wie funktioniert die Suche? 
 Der eingegebene Suchtext wird anhand von Bindestrichen und Leerzeichen in einzelne Wörter aufgeteilt. Ein Name wird gematcht, wenn jedes Suchwort als Präfix im Namen vorhanden ist. Dabei werden Vorname, Nachname oder Doppelnamen getrennt betrachtet.
 
 **Beispiel**\
@@ -22,5 +22,12 @@ Suchbegriff ohne Match: eter, peterhans, max, Peter-Hans Fischer Müller
 
 Weiteres: Der Algorithmus iteriert einfach durch den kompletten Datensatz durch. Dies ist notwendig, da die Daten unsortiert vorliegen. Weiterhin findet keine Priorisierung / Ranking der Matches statt.
 
-# Styling
+### Styling
 Für das Styling habe ich Tailwind CSS benutzt, da mir das am vertrautesten ist - hoffe das passt.
+
+### Mögliche Erweiterungen
+* Button zum löschen des Suchbegriffs innerhalb der Suchleiste
+* Suchergebnis alphabetisch sortieren
+* Eingabe auf unzulässige Zeichen, z.B. Zahlen überprüfen
+* Wäre der Datensatz lexikographisch sortiert, könnte man eventuell die Suche effizienter gestalten
+
